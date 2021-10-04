@@ -18,16 +18,18 @@ namespace SOProject
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
             Process test = new Process();
-            test.StartInfo.FileName = "ipconfig";
-            test.StartInfo.UseShellExecute = false;
-            test.StartInfo.Arguments = "/all";
+            test.StartInfo.FileName = "cmd.exe";
+            test.StartInfo.CreateNoWindow = true;
+            test.StartInfo.RedirectStandardInput = true;
             test.StartInfo.RedirectStandardOutput = true;
+            test.StartInfo.UseShellExecute = false;
             test.Start();
-            txtOutput.Text = test.StandardOutput.ReadToEnd();
-
+            test.StandardInput.WriteLine("perfmon");
+            test.StandardInput.Flush();
+            test.StandardInput.Close();
         }
     }
 }

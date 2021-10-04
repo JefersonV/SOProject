@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace SOProject
 {
@@ -17,11 +18,12 @@ namespace SOProject
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-            Form.ActiveForm.Visible = false;
+            Form1.ActiveForm.Visible = false;
             Form2 vistaComando = new Form2();
             vistaComando.Show();
+
         }
     }
 }
