@@ -53,7 +53,7 @@ namespace SOProject
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(263, 41);
             this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "Ejecutar Perfmon";
+            this.iconButton1.Text = "Perfmon";
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
