@@ -1,7 +1,7 @@
 ﻿
 namespace SOProject
 {
-    partial class Form3
+    partial class Winver
     {
         /// <summary>
         /// Required designer variable.
@@ -29,37 +29,38 @@ namespace SOProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
-            // iconButton1
+            // iconButton2
             // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(21, 12);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(118, 44);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Perfmon";
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.YoutubeSquare;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 40;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(68, 27);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(263, 41);
+            this.iconButton2.TabIndex = 3;
+            this.iconButton2.Text = "Winver";
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // Form3
+            // Winver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 645);
-            this.Controls.Add(this.iconButton1);
-            this.Name = "Form3";
+            this.ClientSize = new System.Drawing.Size(1239, 757);
+            this.Controls.Add(this.iconButton2);
+            this.Name = "Winver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
     }
 }

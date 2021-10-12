@@ -1,7 +1,7 @@
 ﻿ 
 namespace SOProject
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -62,6 +62,7 @@ namespace SOProject
             this.iconButton1.IconSize = 40;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(0, 178);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton1.Size = new System.Drawing.Size(220, 60);
@@ -84,6 +85,7 @@ namespace SOProject
             this.iconButton2.IconSize = 40;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.Location = new System.Drawing.Point(0, 244);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton2.Size = new System.Drawing.Size(220, 60);
@@ -110,7 +112,7 @@ namespace SOProject
             this.panelMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 745);
+            this.panelMenu.Size = new System.Drawing.Size(220, 773);
             this.panelMenu.TabIndex = 5;
             // 
             // iconButton6
@@ -124,6 +126,7 @@ namespace SOProject
             this.iconButton6.IconSize = 40;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.Location = new System.Drawing.Point(0, 508);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton6.Size = new System.Drawing.Size(220, 60);
@@ -145,6 +148,7 @@ namespace SOProject
             this.iconButton5.IconSize = 40;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.Location = new System.Drawing.Point(0, 442);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton5.Size = new System.Drawing.Size(220, 60);
@@ -166,6 +170,7 @@ namespace SOProject
             this.iconButton4.IconSize = 40;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.Location = new System.Drawing.Point(0, 376);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton4.Size = new System.Drawing.Size(220, 60);
@@ -187,6 +192,7 @@ namespace SOProject
             this.iconButton3.IconSize = 40;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.Location = new System.Drawing.Point(0, 310);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
@@ -264,7 +270,7 @@ namespace SOProject
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 75);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1046, 670);
+            this.panelDesktop.Size = new System.Drawing.Size(1046, 698);
             this.panelDesktop.TabIndex = 7;
             // 
             // iconButton7
@@ -277,7 +283,8 @@ namespace SOProject
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 40;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 585);
+            this.iconButton7.Location = new System.Drawing.Point(0, 575);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton7.Size = new System.Drawing.Size(220, 60);
@@ -297,7 +304,8 @@ namespace SOProject
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 40;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 651);
+            this.iconButton8.Location = new System.Drawing.Point(0, 642);
+            this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton8.Size = new System.Drawing.Size(220, 60);
@@ -311,7 +319,7 @@ namespace SOProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1266, 745);
+            this.ClientSize = new System.Drawing.Size(1266, 773);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);

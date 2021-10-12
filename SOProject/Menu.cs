@@ -13,14 +13,14 @@ using System.Runtime.InteropServices;
 
 namespace SOProject
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
         //Constructor
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -102,12 +102,13 @@ namespace SOProject
         {
             ActivateButton(sender, RGBColors.color1);
             // Para abrir el form que deseemos
-            OpenChildForm(new Perfmon());
+            OpenChildForm(new Winver());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new dxdiag());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -123,6 +124,7 @@ namespace SOProject
         private void iconButton5_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Perfmon());
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
@@ -166,6 +168,4 @@ namespace SOProject
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
-
-
 }

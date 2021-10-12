@@ -6,30 +6,36 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
 using System.Windows.Forms;
+using System.Threading;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 namespace SOProject
 {
-    public partial class Form3 : Form
+    public partial class dxdiag : Form
     {
-
-        public Form3()
+        public dxdiag()
         {
             InitializeComponent();
         }
-        //[System.Runtime.InteropServices.DllImport("user32.dll")]
-        [DllImport("user32.dll")]
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
         static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-               
             Process p = Process.Start("dxdiag");
-            Thread.Sleep(100);
             p.WaitForInputIdle();
+            while (p.MainWindowHandle == IntPtr.Zero)
+            {
+                Thread.Sleep(100);
+                p.Refresh();
+            }
+            //Thread.Sleep(100);
+            //p.InitializeLifetimeService();
+            //p.WaitForInputIdle();
+            //p.WaitForExit();
             SetParent(p.MainWindowHandle, this.Handle);
         }
     }

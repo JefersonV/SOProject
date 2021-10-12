@@ -19,35 +19,66 @@ namespace SOProject
         {
             InitializeComponent();
         }
-
+        /*
         [DllImport("user32.dll")]
         static extern IntPtr SetParent(IntPtr hwc, IntPtr hwp);
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            Process p = Process.Start("winver.exe");
-            Thread.Sleep(100);
-            p.WaitForInputIdle();
-            SetParent(p.MainWindowHandle, this.Handle);
-        }
-
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-            Process test = new Process();
-            test.StartInfo.FileName = "cmd.exe";
-            test.StartInfo.CreateNoWindow = true;
-            test.StartInfo.RedirectStandardInput = true;
-            test.StartInfo.RedirectStandardOutput = true;
-            test.StartInfo.UseShellExecute = false;
-            test.Start();
-            test.StandardInput.WriteLine("perfmon");
-            test.StandardInput.Flush();
-            test.StandardInput.Close();
-        }
-
+        */
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
+        
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            
+
+            /*
+            Process p = new Process();
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.CreateNoWindow = true;
+            p.StartInfo.RedirectStandardInput = true;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.UseShellExecute = false;
+            p.Start();
+            p.StandardInput.WriteLine("perfmon");
+            p.StandardInput.Flush();
+            p.StandardInput.Close();
+        */
         }
+
+        public void iconButton2_Click(object sender, EventArgs e)
+        {
+            /*
+            OpenFileDialog od = new OpenFileDialog();
+            if (od.ShowDialog() == DialogResult.OK)
+            {
+
+                Process proc = Process.Start(od.FileName);
+                proc.WaitForInputIdle();
+
+                while (proc.MainWindowHandle == IntPtr.Zero)
+                {
+                    Thread.Sleep(100);
+                    proc.Refresh();
+                }
+
+
+                SetParent(proc.MainWindowHandle, this.Handle);
+            }
+            */
+                //%windir%\system32\perfmon.msc /s
+                
+                Process p = Process.Start("dxdiag.exe");
+                p.WaitForInputIdle();
+                while (p.MainWindowHandle == IntPtr.Zero)
+                {
+                Thread.Sleep(100);
+                p.Refresh();
+                }
+                //Thread.Sleep(100);
+                //p.InitializeLifetimeService();
+                //p.WaitForInputIdle();
+                //p.WaitForExit();
+                SetParent(p.MainWindowHandle, this.panel1.Handle);
+                
+        }
+
     }
 }
