@@ -42,6 +42,8 @@ namespace SOProject
             this.iconCurrentChild = new FontAwesome.Sharp.IconPictureBox();
             this.labelTitleChild = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -64,7 +66,7 @@ namespace SOProject
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton1.Size = new System.Drawing.Size(220, 60);
             this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "Perfmon";
+            this.iconButton1.Text = "Versión de Windows (winver)";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
@@ -76,7 +78,7 @@ namespace SOProject
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.NodeJs;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ShieldAlt;
             this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 40;
@@ -86,7 +88,7 @@ namespace SOProject
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton2.Size = new System.Drawing.Size(220, 60);
             this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "Prueba";
+            this.iconButton2.Text = "Identificar hardware (dxdiag)";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
@@ -94,7 +96,9 @@ namespace SOProject
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(101)))), ((int)(((byte)(183)))));
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.iconButton8);
+            this.panelMenu.Controls.Add(this.iconButton7);
             this.panelMenu.Controls.Add(this.iconButton6);
             this.panelMenu.Controls.Add(this.iconButton5);
             this.panelMenu.Controls.Add(this.iconButton4);
@@ -106,7 +110,7 @@ namespace SOProject
             this.panelMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 697);
+            this.panelMenu.Size = new System.Drawing.Size(220, 745);
             this.panelMenu.TabIndex = 5;
             // 
             // iconButton6
@@ -114,7 +118,7 @@ namespace SOProject
             this.iconButton6.FlatAppearance.BorderSize = 0;
             this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Weight;
             this.iconButton6.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 40;
@@ -124,7 +128,7 @@ namespace SOProject
             this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton6.Size = new System.Drawing.Size(220, 60);
             this.iconButton6.TabIndex = 9;
-            this.iconButton6.Text = "iconButton6";
+            this.iconButton6.Text = "Conexiones de red activas (netstat)";
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton6.UseVisualStyleBackColor = true;
@@ -135,7 +139,7 @@ namespace SOProject
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton5.ForeColor = System.Drawing.Color.White;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PollH;
             this.iconButton5.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 40;
@@ -145,7 +149,7 @@ namespace SOProject
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton5.Size = new System.Drawing.Size(220, 60);
             this.iconButton5.TabIndex = 8;
-            this.iconButton5.Text = "iconButton5";
+            this.iconButton5.Text = "Monitoreo de Recursos (perfmon)";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton5.UseVisualStyleBackColor = true;
@@ -156,7 +160,7 @@ namespace SOProject
             this.iconButton4.FlatAppearance.BorderSize = 0;
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
             this.iconButton4.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 40;
@@ -166,7 +170,7 @@ namespace SOProject
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton4.Size = new System.Drawing.Size(220, 60);
             this.iconButton4.TabIndex = 7;
-            this.iconButton4.Text = "iconButton4";
+            this.iconButton4.Text = "Procesos en ejecución (tasklist)";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = true;
@@ -177,7 +181,7 @@ namespace SOProject
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.NotesMedical;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ExchangeAlt;
             this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 40;
@@ -187,7 +191,7 @@ namespace SOProject
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
             this.iconButton3.TabIndex = 6;
-            this.iconButton3.Text = "iconButton3";
+            this.iconButton3.Text = "Instalar o desinstalar programas";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
@@ -204,11 +208,11 @@ namespace SOProject
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(101)))), ((int)(((byte)(183)))));
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopCode;
+            this.btnHome.IconChar = FontAwesome.Sharp.IconChar.LaptopHouse;
             this.btnHome.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 140;
@@ -221,7 +225,7 @@ namespace SOProject
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.Snow;
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.panelTitleBar.Controls.Add(this.labelTitleChild);
             this.panelTitleBar.Controls.Add(this.iconCurrentChild);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,7 +237,7 @@ namespace SOProject
             // 
             // iconCurrentChild
             // 
-            this.iconCurrentChild.BackColor = System.Drawing.Color.Snow;
+            this.iconCurrentChild.BackColor = System.Drawing.Color.Transparent;
             this.iconCurrentChild.ForeColor = System.Drawing.Color.Purple;
             this.iconCurrentChild.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChild.IconColor = System.Drawing.Color.Purple;
@@ -260,14 +264,54 @@ namespace SOProject
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 75);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1046, 622);
+            this.panelDesktop.Size = new System.Drawing.Size(1046, 670);
             this.panelDesktop.TabIndex = 7;
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.ForeColor = System.Drawing.Color.White;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.iconButton7.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 40;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(0, 585);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.iconButton7.Size = new System.Drawing.Size(220, 60);
+            this.iconButton7.TabIndex = 10;
+            this.iconButton7.Text = "Concurrencia";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.ForeColor = System.Drawing.Color.White;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Indent;
+            this.iconButton8.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.IconSize = 40;
+            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.Location = new System.Drawing.Point(0, 651);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.iconButton8.Size = new System.Drawing.Size(220, 60);
+            this.iconButton8.TabIndex = 11;
+            this.iconButton8.Text = "Interbloqueos";
+            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1266, 697);
+            this.ClientSize = new System.Drawing.Size(1266, 745);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -298,6 +342,8 @@ namespace SOProject
         private FontAwesome.Sharp.IconPictureBox iconCurrentChild;
         private System.Windows.Forms.Label labelTitleChild;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton iconButton7;
     }
 }
 

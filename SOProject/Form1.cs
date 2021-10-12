@@ -101,6 +101,7 @@ namespace SOProject
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            // Para abrir el form que deseemos
             OpenChildForm(new Perfmon());
         }
 
@@ -133,6 +134,11 @@ namespace SOProject
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            if(currentChildForm != null)
+            {
+                currentChildForm.Close();
+
+            }
             Reset();
         }
 
