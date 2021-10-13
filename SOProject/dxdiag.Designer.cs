@@ -53,6 +53,7 @@ namespace SOProject
             this.Controls.Add(this.iconButton1);
             this.Name = "dxdiag";
             this.Text = "dxdiag";
+            this.Load += new System.EventHandler(this.dxdiag_Load);
             this.ResumeLayout(false);
 
         }

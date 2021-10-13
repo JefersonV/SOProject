@@ -38,5 +38,10 @@ namespace SOProject
             //p.WaitForExit();
             SetParent(p.MainWindowHandle, this.Handle);
         }
+
+        private void dxdiag_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
