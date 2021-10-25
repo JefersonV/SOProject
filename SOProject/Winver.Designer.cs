@@ -56,6 +56,7 @@ namespace SOProject
             this.Name = "Winver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Winver_Load);
             this.ResumeLayout(false);
 
         }

@@ -32,6 +32,8 @@ namespace SOProject
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
@@ -39,11 +41,9 @@ namespace SOProject
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnHome = new FontAwesome.Sharp.IconPictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.iconCurrentChild = new FontAwesome.Sharp.IconPictureBox();
             this.labelTitleChild = new System.Windows.Forms.Label();
+            this.iconCurrentChild = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -114,6 +114,50 @@ namespace SOProject
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 773);
             this.panelMenu.TabIndex = 5;
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.ForeColor = System.Drawing.Color.White;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Indent;
+            this.iconButton8.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.IconSize = 40;
+            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.Location = new System.Drawing.Point(0, 642);
+            this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.iconButton8.Size = new System.Drawing.Size(220, 60);
+            this.iconButton8.TabIndex = 11;
+            this.iconButton8.Text = "Interbloqueos";
+            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton8.UseVisualStyleBackColor = true;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.ForeColor = System.Drawing.Color.White;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.iconButton7.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 40;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(0, 575);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.iconButton7.Size = new System.Drawing.Size(220, 60);
+            this.iconButton7.TabIndex = 10;
+            this.iconButton7.Text = "Concurrencia";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // iconButton6
             // 
@@ -239,7 +283,18 @@ namespace SOProject
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(1046, 75);
             this.panelTitleBar.TabIndex = 6;
+            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // labelTitleChild
+            // 
+            this.labelTitleChild.AutoSize = true;
+            this.labelTitleChild.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelTitleChild.Location = new System.Drawing.Point(60, 24);
+            this.labelTitleChild.Name = "labelTitleChild";
+            this.labelTitleChild.Size = new System.Drawing.Size(45, 16);
+            this.labelTitleChild.TabIndex = 1;
+            this.labelTitleChild.Text = "Home";
             // 
             // iconCurrentChild
             // 
@@ -255,16 +310,6 @@ namespace SOProject
             this.iconCurrentChild.TabIndex = 0;
             this.iconCurrentChild.TabStop = false;
             // 
-            // labelTitleChild
-            // 
-            this.labelTitleChild.AutoSize = true;
-            this.labelTitleChild.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTitleChild.Location = new System.Drawing.Point(60, 24);
-            this.labelTitleChild.Name = "labelTitleChild";
-            this.labelTitleChild.Size = new System.Drawing.Size(45, 16);
-            this.labelTitleChild.TabIndex = 1;
-            this.labelTitleChild.Text = "Home";
-            // 
             // panelDesktop
             // 
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -273,49 +318,7 @@ namespace SOProject
             this.panelDesktop.Size = new System.Drawing.Size(1046, 698);
             this.panelDesktop.TabIndex = 7;
             // 
-            // iconButton7
-            // 
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.ForeColor = System.Drawing.Color.White;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
-            this.iconButton7.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 40;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 575);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.iconButton7.Size = new System.Drawing.Size(220, 60);
-            this.iconButton7.TabIndex = 10;
-            this.iconButton7.Text = "Concurrencia";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            // 
-            // iconButton8
-            // 
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.ForeColor = System.Drawing.Color.White;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Indent;
-            this.iconButton8.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 40;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 642);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.iconButton8.Size = new System.Drawing.Size(220, 60);
-            this.iconButton8.TabIndex = 11;
-            this.iconButton8.Text = "Interbloqueos";
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -323,7 +326,7 @@ namespace SOProject
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);

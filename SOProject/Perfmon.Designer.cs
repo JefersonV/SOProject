@@ -62,10 +62,11 @@ namespace SOProject
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(21, 89);
+            this.panel1.Location = new System.Drawing.Point(21, 80);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1170, 544);
+            this.panel1.Size = new System.Drawing.Size(1155, 539);
             this.panel1.TabIndex = 2;
+            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
             // 
             // Perfmon
             // 

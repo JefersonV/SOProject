@@ -25,10 +25,22 @@ namespace SOProject
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
+            //Process p = new Process();
+            //p.StartInfo.FileName = "ipconfig";
+            //p.StartInfo.UseShellExecute = false;
+            //p.StartInfo.Arguments = "\all";
+            //p.StartInfo.RedirectStandardOutput = true;
+            //p.Start();
             Process p = Process.Start("winver.exe");
+            //p.StartInfo.Arguments = "/sys";
             Thread.Sleep(100);
             p.WaitForInputIdle();
             SetParent(p.MainWindowHandle, this.Handle);
+        }
+
+        private void Winver_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

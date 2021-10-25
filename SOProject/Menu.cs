@@ -114,11 +114,13 @@ namespace SOProject
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new Appwiz());
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new Tasklist());
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
@@ -130,7 +132,7 @@ namespace SOProject
         private void iconButton6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
-
+            OpenChildForm(new Netstat());
 
         }
 
@@ -166,6 +168,23 @@ namespace SOProject
             ReleaseCapture();
 
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Concurrencia());
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Interbloqueos());
         }
     }
 }

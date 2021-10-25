@@ -49,17 +49,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appwiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appwiz.Designer.cs">
+      <DependentUpon>Appwiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concurrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Concurrencia.Designer.cs">
+      <DependentUpon>Concurrencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="dxdiag.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dxdiag.Designer.cs">
       <DependentUpon>dxdiag.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interbloqueos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interbloqueos.Designer.cs">
+      <DependentUpon>Interbloqueos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Netstat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Netstat.Designer.cs">
+      <DependentUpon>Netstat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasklist.Designer.cs">
+      <DependentUpon>Tasklist.cs</DependentUpon>
     </Compile>
     <Compile Include="Winver.cs">
       <SubType>Form</SubType>
@@ -75,11 +105,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Appwiz.resx">
+      <DependentUpon>Appwiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Concurrencia.resx">
+      <DependentUpon>Concurrencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dxdiag.resx">
       <DependentUpon>dxdiag.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interbloqueos.resx">
+      <DependentUpon>Interbloqueos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Netstat.resx">
+      <DependentUpon>Netstat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Winver.resx">
       <DependentUpon>Winver.cs</DependentUpon>

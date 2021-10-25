@@ -20,12 +20,12 @@ namespace SOProject
             InitializeComponent();
         }
 
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        [DllImport("user32.dll")]
         static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Process p = Process.Start("dxdiag");
+            Process p = Process.Start("dxdiag.exe");
             p.WaitForInputIdle();
             while (p.MainWindowHandle == IntPtr.Zero)
             {
