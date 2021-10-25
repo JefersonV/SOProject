@@ -13,9 +13,9 @@ using System.Runtime.InteropServices;
 
 namespace SOProject
 {
-    public partial class dxdiag : Form
+    public partial class Dxdiag : Form
     {
-        public dxdiag()
+        public Dxdiag()
         {
             InitializeComponent();
         }

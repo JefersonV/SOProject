@@ -108,7 +108,7 @@ namespace SOProject
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new dxdiag());
+            OpenChildForm(new Dxdiag());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -120,7 +120,7 @@ namespace SOProject
         private void iconButton4_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new Tasklist());
+            OpenChildForm(new Btn_Detener());
         }
 
         private void iconButton5_Click(object sender, EventArgs e)

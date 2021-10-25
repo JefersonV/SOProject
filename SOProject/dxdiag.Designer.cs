@@ -1,7 +1,7 @@
 ﻿
 namespace SOProject
 {
-    partial class dxdiag
+    partial class Dxdiag
     {
         /// <summary>
         /// Required designer variable.

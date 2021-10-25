@@ -61,11 +61,11 @@
     <Compile Include="Concurrencia.Designer.cs">
       <DependentUpon>Concurrencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="dxdiag.cs">
+    <Compile Include="Dxdiag.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dxdiag.Designer.cs">
-      <DependentUpon>dxdiag.cs</DependentUpon>
+    <Compile Include="Dxdiag.Designer.cs">
+      <DependentUpon>Dxdiag.cs</DependentUpon>
     </Compile>
     <Compile Include="Interbloqueos.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,8 @@
     <EmbeddedResource Include="Concurrencia.resx">
       <DependentUpon>Concurrencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dxdiag.resx">
-      <DependentUpon>dxdiag.cs</DependentUpon>
+    <EmbeddedResource Include="Dxdiag.resx">
+      <DependentUpon>Dxdiag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interbloqueos.resx">
       <DependentUpon>Interbloqueos.cs</DependentUpon>
@@ -122,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Netstat.resx">
       <DependentUpon>Netstat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasklist.resx">
+      <DependentUpon>Tasklist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Winver.resx">
       <DependentUpon>Winver.cs</DependentUpon>
