@@ -44,11 +44,17 @@ namespace SOProject
             this.labelTitleChild = new System.Windows.Forms.Label();
             this.iconCurrentChild = new FontAwesome.Sharp.IconPictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChild)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // iconButton1
@@ -276,6 +282,9 @@ namespace SOProject
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.iconPictureBox3);
+            this.panelTitleBar.Controls.Add(this.iconPictureBox2);
+            this.panelTitleBar.Controls.Add(this.iconPictureBox1);
             this.panelTitleBar.Controls.Add(this.labelTitleChild);
             this.panelTitleBar.Controls.Add(this.iconCurrentChild);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -295,6 +304,7 @@ namespace SOProject
             this.labelTitleChild.Size = new System.Drawing.Size(45, 16);
             this.labelTitleChild.TabIndex = 1;
             this.labelTitleChild.Text = "Home";
+            this.labelTitleChild.Click += new System.EventHandler(this.labelTitleChild_Click);
             // 
             // iconCurrentChild
             // 
@@ -318,6 +328,51 @@ namespace SOProject
             this.panelDesktop.Size = new System.Drawing.Size(1046, 698);
             this.panelDesktop.TabIndex = 7;
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1011, 0);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 2;
+            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ExpandAlt;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.Location = new System.Drawing.Point(973, 0);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox2.TabIndex = 3;
+            this.iconPictureBox2.TabStop = false;
+            this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlLightLight;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.Location = new System.Drawing.Point(935, 0);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox3.TabIndex = 4;
+            this.iconPictureBox3.TabStop = false;
+            this.iconPictureBox3.Click += new System.EventHandler(this.iconPictureBox3_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -335,6 +390,9 @@ namespace SOProject
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChild)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -352,9 +410,12 @@ namespace SOProject
         private System.Windows.Forms.Panel panelTitleBar;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChild;
         private System.Windows.Forms.Label labelTitleChild;
-        private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton7;
+        private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
 

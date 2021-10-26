@@ -186,5 +186,31 @@ namespace SOProject
             ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new Interbloqueos());
         }
+
+        private void labelTitleChild_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            if(WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            } else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void iconPictureBox3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
