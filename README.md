@@ -1,5 +1,5 @@
 # Proyecto Sistemas Operativos
-## A través de la interfaz gráfica de Windows Forms
+### El usuario podrá a través de la interfaz gráfica:
 - Identificar la versión de windows instalada.
 - Identificar el hardware y versión del directx de la PC.
 - Identificar el software del equipo donde se ejecute la interfaz.
