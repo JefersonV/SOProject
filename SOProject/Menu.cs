@@ -178,7 +178,7 @@ namespace SOProject
         private void iconButton7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenChildForm(new Concurrencia());
+            OpenChildForm(new Form1());
         }
 
         private void iconButton8_Click(object sender, EventArgs e)

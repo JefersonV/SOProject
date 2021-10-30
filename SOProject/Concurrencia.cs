@@ -16,5 +16,10 @@ namespace SOProject
         {
             InitializeComponent();
         }
+
+        private void Concurrencia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

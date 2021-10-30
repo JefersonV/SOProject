@@ -49,6 +49,7 @@ namespace SOProject
             this.Controls.Add(this.label1);
             this.Name = "Concurrencia";
             this.Text = "Concurrencia";
+            this.Load += new System.EventHandler(this.Concurrencia_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
