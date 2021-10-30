@@ -124,6 +124,7 @@ namespace SOProject
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -896,11 +897,12 @@ namespace SOProject
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Entrance B";
+            this.label1.Text = "Entrada B";
             // 
             // panel23
             // 
@@ -960,11 +962,12 @@ namespace SOProject
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 39);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Exit D";
+            this.label4.Text = "Salida D";
             // 
             // panel7
             // 
@@ -979,11 +982,12 @@ namespace SOProject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 42);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(22, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Exit C";
+            this.label3.Text = "Salida C";
             // 
             // panel6
             // 
@@ -1030,7 +1034,7 @@ namespace SOProject
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Location = new System.Drawing.Point(64, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(115, 68);
+            this.panel2.Size = new System.Drawing.Size(115, 289);
             this.panel2.TabIndex = 95;
             // 
             // panel1
@@ -1046,17 +1050,30 @@ namespace SOProject
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(14, 5);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Entrance A";
+            this.label5.Text = "Entrada A";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Red;
+            this.label14.Location = new System.Drawing.Point(256, 530);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(299, 24);
+            this.label14.TabIndex = 138;
+            this.label14.Text = "Simulación Concurrencia Parqueo";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 506);
+            this.ClientSize = new System.Drawing.Size(998, 727);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnB);
             this.Controls.Add(this.groupBox2);
@@ -1142,6 +1159,7 @@ namespace SOProject
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1243,6 +1261,7 @@ namespace SOProject
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
+        private Label label14;
     }
 }
 
